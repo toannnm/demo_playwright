@@ -13,10 +13,6 @@ test.describe('example test', () => {
     await page.getByRole('link', { name: 'Get started' }).click();
     await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
   });
-
-  test.afterAll(async ({ page }) => {
-    await page.close();
-  });
 });
 
 
